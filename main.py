@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 # 参数格式：第一个为日期2019-03-30，第二个为第几节1-2
 url = "http://hub.m.hust.edu.cn/aam/room/selectFreeRoom.action?buildingCode=%27D120,%E4%B8%9C%E5%8D%81%E4%BA%8C%E6%A5%BC%27&borrowDate=%27" + sys.argv[1] + "%27&section=%27" + sys.argv[2] + "%E8%8A%82%27"
 print(url)
-headers = {'Cookie': 'JSESSIONID=0000J2XFamfH9Aqe6oR0g0xW4lZ:-1'}
+headers = {'Cookie': 'JSESSIONID=0000hi1OD1rKnn1nCpYB07rw6a2:-1'}
 r = requests.get(url, headers = headers)
 soup = BeautifulSoup(r.content)
 i = 0
